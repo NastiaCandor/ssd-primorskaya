@@ -61,13 +61,14 @@
       text-transform: uppercase;
       font-weight: 600;
       margin-bottom: 6rem;
-      font-family: 'Arsenal-reg';
+      font-family: 'Arsenal';
+      font-weight: 500;
       color: $secondary-color;
     }
     .subtitle {
       margin-bottom: 2rem;
       text-transform: uppercase;
-      font-family: 'Arsenal-bold';
+      font-weight: 700;
       span {
         color: $secondary-color;
       }
@@ -76,7 +77,8 @@
       color: $secondary-color;
       display: flex;
       gap: 4rem;
-      font-family: 'Geologica-light';
+      font-family: 'Geologica';
+      font-weight: 300;
     }
     &-bottom {
       display: flex;

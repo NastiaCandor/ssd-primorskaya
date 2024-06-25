@@ -1,7 +1,8 @@
 .content {
   height: 99rem;
   &__text {
-    font-family: 'Geologica-light';
+    font-family: 'Geologica';
+    font-weight: 300;
     line-height: 190%;
   }
 }
@@ -29,7 +30,8 @@
     margin-top: 3rem;
     .title {
       color: $secondary-color;
-      font-family: 'Arsenal-reg';
+      font-family: 'Arsenal';
+      font-weight: 500;
       margin-bottom: 5rem;
     }
   }

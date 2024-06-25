@@ -1,0 +1,28 @@
+.comfort {
+  margin-left: -9rem;
+  padding: 4rem 0;
+  .content-round__img {
+    height: 82rem;
+  }
+  .container {
+    gap: 11rem;
+  }
+  .content-round__content {
+    margin-top: -3rem;
+    .title {
+      margin-bottom: 5rem;
+    }
+    .list__ul {
+      margin-bottom: 5rem;
+    }
+    .list__li {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+    .btn {
+      padding: 1.6rem 7rem 1.6rem 6rem;
+    }
+  }
+}

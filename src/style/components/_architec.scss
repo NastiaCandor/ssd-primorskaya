@@ -1,0 +1,16 @@
+.architect {
+  padding: 9.5rem 0;
+  margin-left: -5rem;
+  .title {
+    color: $secondary-color;
+    margin-bottom: 5rem;
+  }
+  &__img-block {
+    padding: 10.2rem 0;
+    margin-left: -5rem;
+  }
+  .link_lined {
+    margin-top: auto;
+    margin-bottom: 1rem;
+  }
+}

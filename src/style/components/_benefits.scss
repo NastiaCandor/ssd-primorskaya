@@ -1,0 +1,16 @@
+.benefits {
+  padding: 4rem 0;
+  margin-left: -4rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img-block {
+    width: 108rem;
+    height: 70rem;
+    overflow: hidden;
+  }
+  .grid__content {
+    width: 54rem;
+  }
+}

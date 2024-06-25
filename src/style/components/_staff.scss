@@ -7,6 +7,8 @@
   &__li {
     position: relative;
     margin-left: 2rem;
+    font-family: 'Geologica';
+    font-weight: 300;
     &::before {
       content: '';
       display: block;
@@ -31,7 +33,7 @@
     &-header {
       display: flex;
       align-items: center;
-      font-family: 'Arsenal-bold';
+      font-weight: 700;
       .dotted-line {
         height: 1px;
         width: 100%;
@@ -62,9 +64,70 @@
       white-space: nowrap;
     }
     &-text {
-      font-family: 'Geologica-light';
+      font-family: 'Geologica';
+      font-weight: 300;
       line-height: 190%;
       padding-top: 2rem;
+    }
+  }
+}
+
+.list-block {
+  display: flex;
+  gap: 4rem;
+  &__item {
+    width: 53rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .list__ul {
+    gap: 1rem;
+  }
+}
+
+.link {
+  &_lined {
+    color: $secondary-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Geologica';
+    font-weight: 500;
+    border-bottom: solid 3px $secondary-color;
+    padding-bottom: 0.5rem;
+    width: fit-content;
+    span{
+      width: 1.2rem;
+      height: 1.2rem;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+}
+
+.grid {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-item {
+      border: solid 1px $secondary-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+      .text {
+        font-family: 'Geologica';
+        font-weight: 300;
+        font-size: 1.8rem;
+        span {
+          font-family: 'Arsenal';
+          font-size: 2.4rem;
+          font-weight: 700;
+          color: $secondary-color;
+        }
+      }
     }
   }
 }
