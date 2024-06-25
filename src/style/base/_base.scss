@@ -66,9 +66,10 @@ p {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
 }
 
 button {
@@ -102,7 +103,7 @@ textarea {
 }
 
 .container {
-  width: 152rem;
+  width: 167rem;
   margin: 0 auto;
 }
 

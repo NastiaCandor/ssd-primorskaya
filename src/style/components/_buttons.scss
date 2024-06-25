@@ -1,0 +1,36 @@
+.btn-regular {
+  background-color: $secondary-color;
+  padding: 0.9rem 4rem 1.2rem 4rem;
+  border-radius: 5rem;
+  font-family: $second-family;
+  width: fit-content;
+  &_link {
+    padding: 0.9rem 7rem 1.2rem 6rem;
+  }
+}
+
+.btn-round {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px $secondary-color;
+  &_down {
+    width: 6rem;
+    height: 6rem;
+    img {
+      width: 1.8rem;
+      height: 1.6rem;
+    }
+  }
+  &_40 {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    img {
+      width: 1.5rem;
+      height: 1rem;
+      transition: transform 0.3s ease;
+    }
+  }
+}

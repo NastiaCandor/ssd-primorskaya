@@ -1,0 +1,36 @@
+.content {
+  height: 99rem;
+  &__text {
+    font-family: 'Geologica-light';
+    line-height: 190%;
+  }
+}
+
+.content-round {
+  margin-left: -5rem;
+  .container {
+    display: flex;
+    gap: 5rem;
+    padding-top: 4.5rem;
+    align-items: center;
+  }
+  
+  &__img {
+    border-radius: 50%;
+    width: 86rem;
+    height: 86rem;
+    padding: 2rem;
+    border: 1px $secondary-color dashed;
+    img {
+      border-radius: inherit;
+    }
+  }
+  &__content {
+    margin-top: 3rem;
+    .title {
+      color: $secondary-color;
+      font-family: 'Arsenal-reg';
+      margin-bottom: 5rem;
+    }
+  }
+}

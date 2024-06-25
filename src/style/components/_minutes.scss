@@ -1,0 +1,58 @@
+.minutes {
+  height: 99rem;
+  position: relative;
+  &__bg {
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -7.5rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+  }
+  &__content {
+    padding: 4rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    max-width: 76.6rem;
+    width: 100%;
+    margin-top: -1rem;
+    .title {
+      font-family: 'Arsenal-reg';
+      color: $secondary-color;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $secondary-color;
+        width: 20rem;
+      }
+    }
+    .subtitle {
+      color: $primary-color;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-family: 'Arsenal-bold';
+    }
+    .text {
+      text-align: center;
+      color: $text-secondary-color;
+      font-family: 'Geologica-light';
+      line-height: 190%;
+    }
+  }
+}

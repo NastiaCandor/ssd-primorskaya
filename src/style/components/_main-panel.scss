@@ -1,0 +1,88 @@
+.main-panel {
+  margin-left: -11rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 99rem;
+    width: 171rem;
+    // margin: 0;
+    background-image: url(./assets/images/vector.png);
+    background-repeat: no-repeat;
+    background-position: 114% 8rem;
+  }
+  &__left {
+    position: relative;
+    width: 86rem;
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $grad-dark-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      .subtitle {
+        font-family: $second-family;
+      }
+      .title {
+        font-family: $zt-family;
+        font-style: italic;
+        font-style: italic;
+        letter-spacing: 0.7rem;
+      }
+    }
+  }
+  &__right {
+    height: 100%;
+    width: 75rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-family: $font-family;
+    .title {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 6rem;
+      font-family: 'Arsenal-reg';
+      color: $secondary-color;
+    }
+    .subtitle {
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      font-family: 'Arsenal-bold';
+      span {
+        color: $secondary-color;
+      }
+    }
+    &-points {
+      color: $secondary-color;
+      display: flex;
+      gap: 4rem;
+      font-family: 'Geologica-light';
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      margin: 20rem 0 10rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.location {
+  padding: 10rem 0;
+  margin-left: -5rem;
+  .title {
+    color: $secondary-color;
+    margin-bottom: 4.5rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      width: 85rem;
+      display: flex;
+      flex-direction: column;
+      .text {
+        font-family: 'Geologica-light';
+        line-height: 3.8rem;
+        margin-bottom: 3rem;
+      }
+      .btn {
+        margin-top: auto;
+      }
+    }
+    &-right {
+      width: 76rem;
+      height: 70rem;
+      overflow: hidden;
+    }
+  }
+}

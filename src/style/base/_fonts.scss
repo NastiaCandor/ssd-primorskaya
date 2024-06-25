@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Arsenal';
+  font-family: 'Arsenal-bold';
   src: 
       url('./assets/fonts/Arsenal-Bold.ttf') format('woff');
   font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Arsenal';
+  font-family: 'Arsenal-bold-italic';
   src: 
       url('./assets/fonts/Arsenal-BoldItalic.ttf') format('woff');
   font-weight: 500;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Arsenal';
+  font-family: 'Arsenal-italic';
   src: 
       url('./assets/fonts/Arsenal-Italic.ttf') format('woff');
   font-weight: 600;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Arsenal';
+  font-family: 'Arsenal-reg';
   src: 
       url('./assets/fonts/Arsenal-Regular.ttf') format('woff');
   font-weight: 600;
@@ -31,9 +31,25 @@
 }
 
 @font-face {
-  font-family: 'Geologica';
+  font-family: 'Geologica-medium';
   src: 
-      url('./assets/fonts/Geologica-VariableFont_CRSV,SHRP,slnt,wght.ttf') format('woff');
+      url('./assets/fonts/Geologica-Medium.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geologica-light';
+  src: 
+      url('./assets/fonts/Geologica-Light.ttf') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ZTNeueRalewe';
+  src: 
+      url('./assets/fonts/ZTNeueRalewe-ExtraBold.otf') format('woff');
   font-weight: 600;
   font-style: normal;
 }
