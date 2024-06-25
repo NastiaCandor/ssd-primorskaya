@@ -5,11 +5,10 @@
     gap: 2rem;
   }
   &__li {
-    display: flex;
-    gap: 1rem;
+    position: relative;
+    margin-left: 2rem;
     &::before {
       content: '';
-      margin-top: 1rem;
       display: block;
       width: 0.5rem;
       min-width: 0.5rem;
@@ -19,6 +18,9 @@
       background-color: $secondary-color;
       border: solid 3px $primary-color;
       outline: solid 1px $secondary-color;
+      position: absolute;
+      top: 1rem;
+      left: -2rem;
     }
   }
 }

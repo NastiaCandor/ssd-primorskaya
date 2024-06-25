@@ -1,0 +1,28 @@
+.infrastr {
+  margin-left: -5rem;
+  padding: 5rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    width: 85rem;
+    height: 75rem;
+    iframe {
+      height: 100%;
+    }
+  }
+  &__rigth {
+    width: 76rem;
+    display: flex;
+    flex-direction: column;
+    .subtitle {
+      font-family: 'Geologica-medium';
+      line-height: 190%;
+      margin-bottom: 4rem;
+    }
+    .btn {
+      margin-top: auto;
+    }
+  }
+}
