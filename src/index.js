@@ -11,6 +11,9 @@ import './style/libs/nouislider.css';
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('Helllo');
+});
 
 // accordion
 utils.accordion();
