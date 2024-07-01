@@ -1,28 +1,63 @@
 .comfort {
-  margin-left: -9rem;
-  padding: 4rem 0;
-  .content-round__img {
-    height: 82rem;
+  padding: 5rem 0;
+  margin-left: -5rem;
+  .title {
+    color: $secondary-color;
+    margin-bottom: 5rem;
   }
-  .container {
-    gap: 11rem;
+  .subtitle {
+    font-family: 'Geologica';
+    margin-bottom: 4rem;
   }
-  .content-round__content {
-    margin-top: -3rem;
-    .title {
-      margin-bottom: 5rem;
-    }
-    .list__ul {
-      margin-bottom: 5rem;
-    }
-    .list__li {
-      margin-left: 0;
-      &::before {
-        display: none;
+  &__img {
+    &-block {
+      position: relative;
+      width: 100%;
+      height: 90rem;
+      overflow: hidden;
+      margin-bottom: 10rem;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
       }
     }
-    .btn {
-      padding: 1.6rem 7rem 1.6rem 6rem;
+    &-bubble {
+      width: 45rem;
+      height: 45rem;
+      border-radius: 50%;
+      background-color: $primary-color;
+      padding: 2rem;
+      margin: 23rem 0 0 5rem;
+      &-info {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: dashed 2px $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .num {
+          font-size: 20rem;
+          color: $secondary-color;
+          margin-top: -1rem;
+        }
+        .text {
+          position: absolute;
+          top: 19rem;
+          right: 11rem;
+          font-family: 'Geologica';
+        }
+        .btn {
+          padding: 0.9rem 3rem 1.2rem 3rem;
+          margin-top: 2rem;
+        }
+      }
     }
+  }
+  .block {
+    margin-left: -4rem;
   }
 }

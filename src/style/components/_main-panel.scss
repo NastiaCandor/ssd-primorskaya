@@ -1,14 +1,15 @@
 .main-panel {
   margin-left: -11rem;
+  background-image: url(./assets/images/vector.png);
+  background-repeat: no-repeat;
+  background-position: 100% 8rem;
+  background-size: 90rem 90rem;
   .container {
     display: flex;
     justify-content: space-between;
     height: 99rem;
     width: 171rem;
     // margin: 0;
-    background-image: url(./assets/images/vector.png);
-    background-repeat: no-repeat;
-    background-position: 114% 8rem;
   }
   &__left {
     position: relative;
@@ -57,6 +58,15 @@
     justify-content: flex-end;
     flex-direction: column;
     font-family: $font-family;
+    padding-top: 11rem;
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: $text-color;
+      margin-bottom: auto;
+    }
     .title {
       text-transform: uppercase;
       font-weight: 600;

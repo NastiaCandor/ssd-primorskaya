@@ -11,22 +11,12 @@
   }
   &__panel {
     display: flex;
-    max-width: 96rem;
+    max-width: 95.5rem;
     width: 100%;
     justify-content: space-between;
     padding: 3.4rem 10rem;
     background-color: $primary-color;
     position: relative;
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 1px;
-      background: $text-color;
-      bottom: 0;
-      right: 10rem;
-      width: calc(100% - 20rem);
-    }
   }
   &__panel-side {
     display: flex;
@@ -48,6 +38,13 @@
       background-color: $secondary-color;
     }
   }
+  &__tel-link {
+    white-space: nowrap;
+  }
+  &__menu-img {
+    height: 3.3rem;
+    width: 4rem;
+  }
 }
 
 .logo {
@@ -67,6 +64,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .menu-block {
   font-family: $second-family;

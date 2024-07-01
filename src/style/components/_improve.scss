@@ -1,0 +1,63 @@
+.improve {
+  padding: 4.5rem 0;
+  margin-left: -5rem;
+  position: relative;
+  &__content {
+    
+    height: 80rem;
+    // background-color: $secondary-color;
+
+  }
+  &__swiper {
+    position: relative;
+    &-slide {
+      display: flex;
+      background-color: $secondary-color;
+      justify-content: space-between;
+      height: 100%;
+      .content {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        height: 100%;
+        .title {
+          text-transform: uppercase;
+        }
+        .text {
+          font-family: 'Geologica';
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          width: 71.3rem;
+        }
+        .link_lined {
+          color: $text-color;
+          border-color: $text-color;
+          font-family: 'Geologica';
+          &::before {
+            content: '';
+            display: block;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: $text-color;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+      .img-box {
+        width: 83rem;
+        height: 100%;
+        overflow: hidden;
+      }
+    }
+    &-navigation {
+      position: absolute;
+      bottom: 9rem;
+      left: 14rem;
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
