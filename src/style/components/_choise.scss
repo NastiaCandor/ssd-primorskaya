@@ -1,0 +1,38 @@
+.choise {
+  margin-left: -5rem;
+  padding: 9rem 0 0;
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Geologica';
+    margin-top: 5rem;
+    gap: 5rem;
+    &-text {
+      background: $secondary-color;
+      padding: 3.6rem 4rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &-more {
+      border: dashed 1px $secondary-color;
+      padding: 3.6rem 4rem;
+      color: $secondary-color;
+      display: flex;
+      flex-direction: column;
+      width: 51rem;
+      .btn-round {
+        margin: auto 0 0 auto;
+      }
+    }
+  }
+}

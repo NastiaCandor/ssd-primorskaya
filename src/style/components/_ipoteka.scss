@@ -1,7 +1,10 @@
 .ipoteka {
-  padding: 10.5rem 0;
+  padding: 10.5rem 0 0;
   .title {
     margin-bottom: 4.5rem;
+  }
+  .select {
+    height: 81rem;
   }
   .select__settings {
     .title {
@@ -90,7 +93,7 @@
       }
     }
     &__body {
-      // padding-right: 8rem;
+      margin-bottom: 7rem;
     }
   }
   &__month-pay {
