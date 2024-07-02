@@ -33,4 +33,9 @@
       transition: transform 0.3s ease;
     }
   }
+  &_filled {
+    width: 4rem;
+    height: 4rem;
+    background: $secondary-color;
+  }
 }

@@ -12,11 +12,19 @@ import './style/libs/nouislider.css';
 import Swiper from 'swiper/bundle';
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('Helllo');
+  // accordion
+  utils.accordion();
+
+  improveSlider();
+
+  chooseAppartForm();
+
+  ipotekaForm();
+
+  otchetSlider();
 });
 
-// accordion
-utils.accordion();
+
 
 const spinnerBlock = `
   <div class="loadingio-spinner-double-ring-nq4q5u6dq7r"><div class="ldio-x2uulkbinbj">
@@ -32,6 +40,9 @@ spinnerContainer.innerHTML = spinnerBlock;
 
 
 function improveSlider() {
+  if (!document.querySelector('.improve__swiper')) return;
+
+
   const slider = new Swiper('.improve__swiper', {
     // If we need pagination
     pagination: {
@@ -46,10 +57,12 @@ function improveSlider() {
     loop: true,
   });
 }
-improveSlider();
+
 
 // функционал выбора квартиры
 function chooseAppartForm() {
+  if (!document.querySelector('#choose-appartment-form')) return;
+
   const sliderFloor = document.getElementById('slider-floor');
 
   noUiSlider.create(sliderFloor, {
@@ -163,7 +176,7 @@ function chooseAppartForm() {
   
   }
 }
-chooseAppartForm();
+
 
 const IPOTEKA_COST_SLIDER_MIN = 5_144_989;
 const IPOTEKA_COST_SLIDER_MAX = 14_000_000;
@@ -175,6 +188,8 @@ const SROK_MAX = 30;
 const SROK_START_VAL = 12;
 
 function ipotekaForm() {
+
+  if (!document.getElementById('ipoteka-form')) return;
 
   // СТОИМОСТЬ НЕДВИЖИМОСТИ
 
@@ -372,4 +387,21 @@ function ipotekaForm() {
     return Math.round(firstPay * 100 / cost);
   }
 }
-ipotekaForm();
+
+function otchetSlider() {
+  if (!document.querySelector('.otchet__photo-swiper')) return;
+
+  const slider = new Swiper('.otchet__photo-swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.otchet__photo-swiper-btn-next',
+      prevEl: '.otchet__photo-swiper-btn-prev',
+    },
+    speed: 500,
+    loop: true,
+  });
+
+  const slides = document.querySelector('.otchet__photo-swiper').querySelectorAll('.swiper-slide');
+  const numSpan = document.querySelector('.otchet__photo-swiper-num span');
+  numSpan.textContent = slides.length;
+}
