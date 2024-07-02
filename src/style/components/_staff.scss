@@ -153,6 +153,7 @@
   left: auto;
   right: auto;
   opacity: 1;
+  margin: 0;
   &::after {
     display: none;
   }
@@ -174,6 +175,7 @@
   position: relative;
   display: flex;
   gap: 1rem;
+  bottom: auto !important;
   &-bullet {
     opacity: 1;
     width: 1.2rem;

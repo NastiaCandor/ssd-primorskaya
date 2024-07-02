@@ -1,7 +1,38 @@
 .ipoteka {
   padding: 10.5rem 0;
-  
-  // #input-ipoteka-cost {
-
-  // }
+  .select__settings {
+    .title {
+      margin-bottom: 2.5rem;
+    }
+  }
+  .select__form-item-inputs {
+    display: flex;
+    font-family: "Geologica";
+    position: relative;
+    gap: 1rem;
+    .perc {
+      position: absolute;
+      top: 0.5rem;
+      left: 5.5rem;
+      color: $text-color;
+    }
+    .let {
+      position: absolute;
+      top: 0.5rem;
+      left: 5rem;
+      color: $text-color;
+    }
+  }
+  #input-ipoteka-cost {
+    width: 13rem;
+  }
+  #input-ipoteka-percent {
+    width: 9rem;
+  }
+  #input-ipoteka-firstpay {
+    width: 13rem;
+  }
+  #input-ipoteka-srok {
+    width: 10rem;
+  }
 }
