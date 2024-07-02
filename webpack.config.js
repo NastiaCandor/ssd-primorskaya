@@ -14,9 +14,7 @@ const devtool = devMode ? "source-map" : undefined;
 const entryPoints = {
   index: path.resolve(__dirname, 'src/js', 'index.js'),
   home_page: path.resolve(__dirname, 'src/js', 'index.js'),
-  ipoteka: path.resolve(__dirname, 'src/js', 'index.js'),
-  rasrochka: path.resolve(__dirname, 'src/js', 'index.js'),
-  matkapital: path.resolve(__dirname, 'src/js', 'index.js'),
+  payment: path.resolve(__dirname, 'src/js', 'index.js'),
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
