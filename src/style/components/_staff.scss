@@ -504,6 +504,33 @@
   }
 }
 
+.input {
+  background: #22515F;
+  font-family: "Geologica";
+  padding: 0.5rem 2rem;
+  color: #FFFFFF;
+  &._lined {
+    border-bottom: solid 1px #B68E6C;
+  }
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .subtitle {
+    font-family: 'Geologica';
+  }
+  &__form {
+    display: flex;
+    gap: 2rem;
+    .btn {
+      width: 24rem;
+      text-align: center;
+    }
+  }
+}
+
 //
 [open-menu] {
   cursor: pointer;

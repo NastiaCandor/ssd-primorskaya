@@ -1,0 +1,53 @@
+.contacts {
+  .container {
+    width: 182rem;
+    background: $secondary-dark-color;
+    padding: 10rem 0;
+  }
+  &__content {
+    padding: 0 0rem 5rem 5rem;
+    border-bottom: solid 1px $secondary-color;
+    display: flex;
+    gap: 9rem;
+    margin-right: 10rem;
+  }
+  &__map {
+    width: 82rem;
+    height: 52rem;
+  }
+  &__info {
+    width: 76rem;
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-transform: uppercase;
+      color: $secondary-color;
+    }
+    .text {
+      margin-top: 5rem;
+      font-family: 'Geologica';
+    }
+    &-contacts {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      .type {
+        font-family: 'Geologica';
+      }
+      .info {
+        text-transform: uppercase;
+        color: $secondary-color;
+      }
+    }
+  }
+  &__comment {
+    padding: 5rem 10rem 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    &-text {
+      font-family: 'Geologica';
+      color: $text-50-color;
+      margin-top: 3rem;
+    }
+  }
+}
