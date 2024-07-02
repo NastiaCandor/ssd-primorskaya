@@ -1,0 +1,51 @@
+.otchet {
+  padding: 9rem 0 0;
+  margin-left: -5rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 86rem;
+    height: 99rem;
+
+    background: $secondary-color;
+  }
+  &__info {
+    width: 71rem;
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-transform: uppercase;
+      color: $secondary-color;
+      margin-bottom: 2rem;
+    }
+    .subtitle {
+      text-transform: uppercase;
+    }
+    &-btns {
+      display: flex;
+      margin-top: 5rem;
+    }
+    &-btn {
+      border: solid 1px $secondary-color;
+      width: 27rem;
+      padding: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      img {
+        width: 4rem;
+        height: 3.5rem;
+      }
+      p {
+        text-transform: uppercase;
+        span {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

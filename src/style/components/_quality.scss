@@ -1,0 +1,36 @@
+.quality {
+  padding: 10rem 0 0;
+  margin-left: -5rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  &__info {
+    margin-top: 8rem;
+    .title {
+      text-transform: uppercase;
+      color: $secondary-color;
+      margin-bottom: 5rem;
+    }
+    .subtitle {
+      font-family: 'Geologica';
+      margin-bottom: 3rem;
+    }
+    .list__ul {
+      font-family: 'Geologica';
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    .img-box {
+      width: 37rem;
+      height: 76rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
