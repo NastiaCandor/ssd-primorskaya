@@ -22,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   ipotekaForm();
 
   otchetSlider();
+
+  menuFunctionality();
 });
 
 
@@ -404,4 +406,24 @@ function otchetSlider() {
   const slides = document.querySelector('.otchet__photo-swiper').querySelectorAll('.swiper-slide');
   const numSpan = document.querySelector('.otchet__photo-swiper-num span');
   numSpan.textContent = slides.length;
+}
+
+function menuFunctionality() {
+  const hamburgers = document.querySelectorAll('[data-burger="open"]');
+  const burgerMenu = document.querySelector('.menu-panel__wrapper');
+  const hamburgerClose = document.querySelector('[data-burger="close"]');
+  
+  function closeBurgerMenu() {
+    burgerMenu.classList.remove('active');
+  };
+  
+  function openBurgerMenu() {
+    burgerMenu.classList.add('active');
+  };
+  
+  hamburgers.forEach(hamburger => {
+    hamburger.addEventListener('click', openBurgerMenu);
+  })
+
+  hamburgerClose.addEventListener('click', closeBurgerMenu);
 }
