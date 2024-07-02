@@ -317,6 +317,54 @@ function ipotekaForm() {
     sliderSrok.noUiSlider.set(value);
   });
 
+  sliderCost.noUiSlider.on('set.one', function (e) {
+    recalcIpoteka();
+  });
+  sliderPercent.noUiSlider.on('set.one', function (e) {
+    recalcIpoteka();
+  });
+  sliderSrok.noUiSlider.on('set.one', function (e) {
+    recalcIpoteka();
+  });
+
+  const resultContainer = document.getElementById('ipoteka-result');
+  const form = document.getElementById('ipoteka-form');
+
+  function recalcIpoteka() {
+    const formData = new FormData(form);
+    const formObject = Object.fromEntries(formData.entries());
+  
+    console.log(formObject);
+  
+  
+    // TODO: add fetch
+  
+    resultContainer.append(spinnerContainer);
+  
+    // REMOVE IT WHEN FETCH IS READY
+    setTimeout(() => {
+      spinnerContainer.remove();
+      changeDisplayPrice();
+    }, 2000);
+  }
+
+  const priceBlock = document.querySelector('.ipoteka__month-pay .total');
+  const worningMess = document.createElement('p');
+  worningMess.classList.add('worning-mess');
+  worningMess.textContent = 'Скорректируйте данные';
+  function changeDisplayPrice() {
+    const items = document.querySelector('.grid__container').querySelectorAll('.grid__item');
+
+    if (items.length < 1) {
+      priceBlock.append(worningMess);
+      return;
+    }
+    worningMess.remove();
+    console.log(items);
+    const price = items[0].querySelector('.price').textContent;
+    priceBlock.querySelector('span').textContent = price;
+  }
+
   function calcFirstPay(cost, percent) {
     return Math.round(cost * percent / 100);
   }

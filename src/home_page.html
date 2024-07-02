@@ -505,7 +505,7 @@
                 </button>
               </form>
             </div>
-            <div class="select__result" id="choose-appartment__result">
+            <div class="select__result scroll" id="choose-appartment__result">
               <div class="appart-card">
                 <div class="appart-card__img">
                   <img src="./assets/images/appart-1.png" alt="">
@@ -539,7 +539,7 @@
               <form action="" class="select__form" id="ipoteka-form">
                 <div class="select__form-item _col">
                   <p class="select__form-item-title txt14light">Стоимость недвижимости, ₽</p>
-                  <input type="text" class="select__form-item-input txt18light" id="input-ipoteka-cost">
+                  <input type="text" class="select__form-item-input txt18light" id="input-ipoteka-cost" name="cost">
                   <div class="select__form-slider txt18light _round">
                     <div id="slider-ipoteka-cost"></div>
                   </div>
@@ -547,10 +547,10 @@
                 <div class="select__form-item _col">
                   <p class="select__form-item-title txt14light">Первоначальный взнос, ₽</p>
                   <div class="select__form-item-inputs txt18light">
-                    <input type="number" class="select__form-item-input txt18light _lined" id="input-ipoteka-percent">
+                    <input type="number" class="select__form-item-input txt18light _lined" id="input-ipoteka-percent" name="percent">
                     <span class="perc">%</span>
-                    <span>/</span>
-                    <input type="text" class="select__form-item-input txt18light  _lined" id="input-ipoteka-firstpay">
+                    <span class="slash">/</span>
+                    <input type="text" class="select__form-item-input txt18light  _lined" id="input-ipoteka-firstpay" name="first-pay">
                   </div>
                   <div class="select__form-slider txt18light _round">
                     <div id="slider-first-pay"></div>
@@ -559,7 +559,7 @@
                 <div class="select__form-item _col">
                   <p class="select__form-item-title txt14light">Срок</p>
                   <div class="select__form-item-inputs txt18light">
-                    <input type="number" class="select__form-item-input txt18light" id="input-ipoteka-srok">
+                    <input type="number" class="select__form-item-input txt18light" id="input-ipoteka-srok" name="years">
                     <span class="let">лет</span>
                   </div>
                   <div class="select__form-slider txt18light _round">
@@ -568,12 +568,36 @@
                 </div>
                 <div class="ipoteka__month-pay">
                   <p class="txt18light">Ежемесячный платёж</p>
+                  <div class="txt30light total">
+                    <span>от 25 000 ₽</span> / мес.
+                  </div>
                 </div>
                 <button class="btn btn-regular txt20light">Оставить заявку</button>
               </form>
             </div>
-            <div class="select__result">
-              
+            <div class="select__result" id="ipoteka-result">
+              <div class="grid txt14light">
+                <div class="grid__header grid__item ">
+                  <p>Банк</p>
+                  <p>Ставка</p>
+                  <p>Первоначальный взнос</p>
+                  <p>Срок</p>
+                  <p>Ежемесячный платёж</p>
+                </div>
+                <div class="grid__container scroll">
+                  <div class="grid__body txt18light">
+                    <div class="grid__item">
+                      <div class="img-box">
+                        <img src="./assets/images/sber.png" alt="">
+                      </div>
+                      <p>От 5%</p>
+                      <p>От 20%</p>
+                      <p>До 25 лет</p>
+                      <p class="price">от <span>38 068</span> ₽</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

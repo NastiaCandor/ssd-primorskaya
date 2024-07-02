@@ -452,7 +452,7 @@
 // SCROLL BAR
 
 /* Define the scrollbar style */
-.select__result::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
   width: 6px;
   height: 15px;
   background: $text-50-color;
@@ -460,7 +460,7 @@
 }
 
 /* Define the thumb style */
-.select__result::-webkit-scrollbar-thumb {
+.scroll::-webkit-scrollbar-thumb {
   background: $secondary-color;
   border-radius: 5px;
 }

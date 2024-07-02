@@ -1,8 +1,14 @@
 .ipoteka {
   padding: 10.5rem 0;
+  .title {
+    margin-bottom: 4.5rem;
+  }
   .select__settings {
     .title {
       margin-bottom: 2.5rem;
+    }
+    .select__form {
+      gap: 4rem;
     }
   }
   .select__form-item-inputs {
@@ -10,6 +16,9 @@
     font-family: "Geologica";
     position: relative;
     gap: 1rem;
+    .slash {
+      margin-top: 0.5rem;
+    }
     .perc {
       position: absolute;
       top: 0.5rem;
@@ -34,5 +43,65 @@
   }
   #input-ipoteka-srok {
     width: 10rem;
+  }
+  .grid {
+    background-color: $text-color;
+    color: #00000080;
+    font-family: 'Geologica';
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    overflow: hidden;
+    &__item {
+      display: grid;
+      align-items: center;
+      padding: 2rem 0;
+      border-bottom: solid 1px #00000080;
+      grid-template-columns: 25rem 14rem 22rem 19rem 24rem;
+      .img-box {
+        display: flex;
+        justify-content: center;
+        width: 20rem;
+        height: 5rem;
+      }
+      p {
+        text-align: center;
+      }
+      .price {
+        font-size: 2.4rem;
+        color: $primary-color;
+      }
+    }
+    &__header {
+      padding: 0;
+      padding-bottom: 4rem;
+      width: 104rem;
+      border-bottom: solid 1px #00000080;
+      p {
+        text-align: center;
+      }
+    }
+    &__container {
+      padding-right: 6rem;
+      overflow-y: scroll;
+      height: 100%;
+      &::-webkit-scrollbar {
+        border: solid 3px $text-color;
+      }
+    }
+    &__body {
+      // padding-right: 8rem;
+    }
+  }
+  &__month-pay {
+    font-family: 'Geologica';
+    .total {
+      position: relative;
+      .worning-mess {
+        position: absolute;
+        top: 0;
+        background-color: $secondary-dark-color;
+      }
+    }
   }
 }
