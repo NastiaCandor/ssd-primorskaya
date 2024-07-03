@@ -457,8 +457,11 @@ function appartModalFunctionality() {
     const card = target.closest('.appart-card');
     console.log(card);
     
-    slider.removeAllSlides();
     // TODO: change when data get
+
+    // DO NOT DELETE
+    // slider.removeAllSlides();
+
     // slider.appendSlide([
     //   `
     //   <div class="swiper-slide">
