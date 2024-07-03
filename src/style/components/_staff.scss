@@ -393,6 +393,7 @@
   font-family: 'Geologica';
   padding: 2rem;
   border: solid 1px $secondary-color;
+  cursor: pointer;
   &__img {
     width: 34rem;
     height: 26rem;
@@ -532,7 +533,7 @@
 }
 
 //
-[open-menu] {
+[data-burger="open"] {
   cursor: pointer;
 }
 .body-content {

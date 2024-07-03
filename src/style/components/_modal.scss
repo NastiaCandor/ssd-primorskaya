@@ -1,0 +1,186 @@
+/* ===== Стили для Модалки ===== */
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 20;
+  transition: .3s all;
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  max-width: 172rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+  box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+  text-align: center;
+  background-color: $secondary-dark-color;
+  transition: 0.3s all;
+  box-sizing: border-box;
+  font-size: 4rem;
+  color: $text-color;
+  @include big-screen {
+    max-width: 172rem;
+  }
+
+  &__close-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid 1px $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 1.5rem;
+      height: 1.4rem;
+    }
+  }
+}
+.modal.active,
+.overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+.wrap-btn-modal {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+}
+.wrap-btn-modal .btn_with_bg {
+  // background-color: $secondary-color;
+  font-size: 4rem;
+  // color: $text-color;
+  border-radius: 2rem;
+  width: 16rem;
+  padding: 2rem;
+  cursor: pointer;
+  &._single {
+    margin: 0 auto;
+  }
+}
+
+// МОДАЛКА КВАРТИРЫ
+.modal-appart {
+  &__content {
+    display: flex;
+  }
+  &__swiper-content {
+    height: 86rem;
+    width: 96rem;
+    overflow: hidden;
+    position: relative;
+
+    background-color: $text-50-color;
+    .btn-round {
+      border: none;
+      img {
+        width: 2.4rem;
+        height: 1.7rem;
+      }
+    }
+    .modal-appart__navigation {
+      display: flex;
+      gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 3rem;
+      width: 100%;
+    }
+    .modal-appart-swiper-pagination {
+      width: auto;
+    }
+    .modal-appart__swiper {
+      height: 100%;
+    }
+    .swiper-slide {
+      .img-block {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    color: $secondary-color;
+    font-family: 'Geologica';
+    cursor: pointer;
+  }
+  &__info {
+    width: 76rem;
+    padding: 4rem;
+    &-content {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 4rem);
+      .title {
+        text-transform: uppercase;
+        padding: 3rem 0;
+        border-bottom: solid 1px $secondary-color;
+      }
+    }
+    &-desc {
+      font-family: 'Geologica';
+      padding: 3rem 0;
+      border-bottom: solid 1px $secondary-color;
+    }
+    &-details {
+      font-family: 'Geologica';
+      padding: 3rem 0;
+      border-bottom: solid 1px $secondary-color;
+      display: grid;
+      grid-template-columns: 16rem 30rem;
+      gap: 1rem 2rem;
+      .item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        color: $text-50-color;
+        .num {
+          color: $text-color;
+        }
+      }
+    }
+    &-price {
+      font-family: 'Geologica';
+      padding: 3rem 0;
+      border-bottom: solid 1px $secondary-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .prev {
+          color: $text-50-color;
+          text-decoration: line-through;
+        }
+      }
+    }
+    &-feedback {
+      margin-top: auto;
+      .input {
+        width: 23rem;
+      }
+    }
+  }
+}

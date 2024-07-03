@@ -4,6 +4,7 @@ import 'swiper/css/bundle';
 import './style.scss';
 
 import * as utils from './js/utils/utils';
+import modals from './js/components/modals';
 
 import noUiSlider from './js/utils/nouislider.min';
 import './style/libs/nouislider.css';
@@ -12,6 +13,8 @@ import './style/libs/nouislider.css';
 import Swiper from 'swiper/bundle';
 
 window.addEventListener('DOMContentLoaded', () => {
+  //modals
+  modals();
   // accordion
   utils.accordion();
 
@@ -24,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
   otchetSlider();
 
   menuFunctionality();
+
+  appartModalFunctionality();
 });
 
 
@@ -426,4 +431,49 @@ function menuFunctionality() {
   })
 
   hamburgerClose.addEventListener('click', closeBurgerMenu);
+}
+
+function appartModalFunctionality() {
+  if (!document.querySelector('.modal-appart__swiper')) return;
+
+  const slider = new Swiper('.modal-appart__swiper', {
+    // If we need pagination
+    pagination: {
+      el: '.modal-appart-swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.modal-appart-swiper-next',
+      prevEl: '.modal-appart-swiper-prev',
+    },
+    speed: 500,
+    loop: true,
+  });
+
+  const appartResult = document.getElementById('choose-appartment__result');
+  const swiperWrapper = document.querySelector('.modal-appart__swiper').querySelector('.swiper-wrapper');
+  appartResult.addEventListener('click', (e) => {
+    const target = e.target;
+    const card = target.closest('.appart-card');
+    console.log(card);
+    
+    slider.removeAllSlides();
+    // TODO: change when data get
+    // slider.appendSlide([
+    //   `
+    //   <div class="swiper-slide">
+    //     <div class="img-block">
+    //       <img src="./assets/images/C_2024_08_1.png" alt="">
+    //     </div>
+    //   </div>
+    // `,
+    // `
+    //   <div class="swiper-slide">
+    //     <div class="img-block">
+    //       <img src="./assets/images/building_2.png" alt="">
+    //     </div>
+    //   </div>
+    // `
+    // ]);
+  });
 }
