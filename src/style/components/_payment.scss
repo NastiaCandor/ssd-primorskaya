@@ -1,0 +1,75 @@
+.payment {
+  margin-left: -15rem;
+  position: relative;
+  .bg-img {
+    position: absolute;
+    top: 8.5rem;
+    right: 0;
+    width: 90rem;
+    height: 90rem;
+  }
+  .container {
+    position: relative;
+  }
+  &__swiper {
+    position: relative;
+    overflow: hidden;
+  }
+  &__slide {
+    display: flex;
+    gap: 10rem;
+    &-img {
+      width: 86rem;
+      min-width: 86rem;
+      height: 99rem;
+      overflow: hidden;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .title {
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin-bottom: 5rem;
+        margin-top: 22rem;
+      }
+      .subtitle {
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        width: 39rem;
+      }
+      .subline {
+        font-family: 'Geologica';
+        margin-bottom: 2rem;
+        span {
+          color: $secondary-color;
+        }
+      }
+      .text {
+        font-family: 'Geologica';
+      }
+      .btn {
+        margin-top: auto;
+        margin-bottom: 9.5rem;
+        padding: 0.9rem 4rem 1.2rem 4rem;
+      }
+    }
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: calc(50% - 5rem);
+    border: none;
+    width: 6rem;
+    height: 6rem;
+  }
+  .swiper-button-prev {
+    left: 4rem;
+    opacity: 0.5;
+  }
+  .swiper-button-next {
+    right: -11rem;
+  }
+}
+

@@ -29,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
   menuFunctionality();
 
   appartModalFunctionality();
+
+  paymentSlider();
 });
 
 
@@ -478,5 +480,19 @@ function appartModalFunctionality() {
     //   </div>
     // `
     // ]);
+  });
+}
+
+function paymentSlider() {
+  if (!document.querySelector('.payment')) return;
+
+  const slider = new Swiper('.payment__swiper', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.payment-swiper-next',
+      prevEl: '.payment-swiper-prev',
+    },
+    speed: 700,
+    loop: true,
   });
 }

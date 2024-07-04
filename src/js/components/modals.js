@@ -58,6 +58,8 @@ function modals() {
       };
   }, false);
 
+  if (!overlay) return;
+
   overlay.addEventListener('click', function () {
       if (document.querySelector('.modal.active')) {
         document.querySelector('.modal.active').classList.remove('active');
